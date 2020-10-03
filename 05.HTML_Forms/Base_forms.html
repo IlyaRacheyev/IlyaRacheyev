@@ -137,9 +137,9 @@
                 <p><b>Валидация данных HTML5:</b></p>
                 <form action="http://fe.it-academy.by/TestForm.php" method="POST">
                     <fieldset>
-                        <input type="text" name="text" placeholder="Только русские буквы" pattern="[А-Яа-яЁё]">
+                        <input type="text" name="text" placeholder="Только русские буквы" pattern="[А-Яа-яЁё]+" required>
                         <br>
-                        <input type="text" name="cell" placeholder="+XXX XX XXXXXXX" pattern="\+?[0-9\s\-\(\)]+">
+                        <input type="text" name="cell" placeholder="+XXX XX XXXXXXX" pattern="\+?[0-9\s\-\(\)]+" required>
                         <br>
                         <input type="submit" value="Check">
                     </fieldset>
