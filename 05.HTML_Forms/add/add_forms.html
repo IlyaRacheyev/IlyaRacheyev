@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms additional</title>
+</head>
+<body>
+    <h1 align="center">Fill the form</h1>
+    <table width="100%">
+        <tr>
+            <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+                <fieldset>
+                    <legend>Personal data</legend>
+                    <input type="text" name="surname" placeholder="Surname" maxlength="25" required autofocus pattern="[А-Яа-яЁё]+\S">
+                    <br>
+                    <input type="text" name="name" placeholder="Name" maxlength="20" required pattern="[А-Яа-яЁё]+\S">
+                    <br>
+                    <input type="text" name="secname" placeholder="Second name" maxlength="24" required pattern="[А-Яа-яЁё]+\S">
+                    <fieldset>
+                        <legend>Passport data</legend>
+                        <input type="text" name="serial" required maxlength="2" pattern="[A-Z]{2}" size="2">
+                        <input type="text" name="number" required maxlength="7" pattern="[0-9]{7.}">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Date of birth</legend>
+                        <input type="text" name="year" placeholder="Year" pattern="[0-9]{4}">
+                        <br>
+                        <select name="month">
+                            <option value="1">Jan</option>
+                            <option value="2">Feb</option>
+                            <option value="3">Mar</option>
+                            <option value="4">Apr</option>
+                            <option value="5">May</option>
+                            <option value="6">Jun</option>
+                            <option value="7">Jul</option>
+                            <option value="8">Aug</option>
+                            <option value="9">Sep</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dec</option>
+                        </select>
+                        <br>
+                        <input type="number" min="1" max="31" step="1">
+                    </fieldset>
+                    <select name="nationality" required>
+                        <option value="1">Belarus</option>
+                        <option value="2">Russia</option>
+                        <option value="3">Ukraine</option>
+                    </select>
+                    <br>
+                    <label for="adress">Adress:</label>
+                    <br>
+                    <textarea name="adress" id="adress" cols="20" rows="2"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Hobbies</legend>
+                    <label>
+                    <input type="checkbox" name="hobby[]" value="Skating">Skating
+                    </label>
+                    <br>
+                    <label>
+                    <input type="checkbox" name="hobby[]" value="Swimming">Swimming
+                    </label>
+                    <br>
+                    <label>
+                    <input type="checkbox" name="hobby[]" value="Codding">Codding
+                    </label>
+                    <br>
+                    <label>
+                    <input type="checkbox" name="hobby[]" value="English">English
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Pets</legend>
+                    <select name="pets" size="9" multiple>
+                        <optgroup label="Dogs">
+                            <option value="1">Large</option>
+                            <option value="2">Middle</option>
+                            <option value="3">Small</option>
+                        </optgroup>
+                        <optgroup label="Cats">
+                            <option value="1">White</option>
+                            <option value="2">Black</option>
+                            <option value="3">Grey</option>
+                        </optgroup>
+                        <optgroup label="Birds">
+                            <option value="1">Chicken</option>
+                            <option value="2">Goose</option>
+                            <option value="3">Duck</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Login and password backup1</legend>
+                        <input type="text" name="login" placeholder="Login" pattern="[A-Za-z]{5,}\S" maxlength="20" required>
+                        <br>
+                        <input type="password" name="pswd" placeholder="Password" pattern="[A-Za-z]{10,}\S" maxlength="20" autocomplete="offS" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Contacts</legend>
+                    <input type="email" placeholder="Email">
+                    <br>
+                    <input type="url" placeholder="URL">
+                </fieldset>
+                <fieldset>
+                    <legend>Numbers</legend>
+                    <input type="number" name="numb" min="-2.5" max="2.5" step="0.1">
+                    <br>
+                    <input type="range" min="1" max="10">
+                </fieldset>
+                <fieldset>
+                    <legend>Buttons</legend>
+                    <input type="submit">
+                    <input type="reset">
+                    <br>
+                    <button type="button"><img src="img/1.JPG" alt="Button"></button>
+                </fieldset>
+            </form>
+        </tr>
+    </table>
+</body>
+</html>
