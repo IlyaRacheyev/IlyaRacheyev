@@ -1,0 +1,20 @@
+.cards{
+    display: inline-block;
+    width: 140px;
+    height: 190px;
+    background: url(img/cards.png) no-repeat;
+}
+.cards.card1 {
+    background-position: -145px -200px;
+}
+.cards.card2 {
+    background-position: -431px -597px;
+    margin-left: -40px;
+}
+.cards.card3 {
+    background-position: -287px -1393px;
+    margin-left: -40px;
+}
+div.card2{
+    background-position-x: 20%;
+}
