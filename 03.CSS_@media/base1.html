@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@media</title>
+    <style>
+        .main{ text-align: center;}
+        .day{
+            display: inline-block;
+            width: 100px;
+            padding: 20px;
+            text-align: center;
+            background-color: lightgrey;
+            border: solid;
+            border-color: darkgray;
+            border-width: 2px;
+            cursor: pointer;
+        }
+        .menu{
+            display: none;
+            width: 100px;
+        }
+        .add{
+            
+            text-align: center;
+            background-color: lightgrey;
+            border: solid;
+            border-color: darkgray;
+            border-width: 2px;
+        }
+        div.main> div:hover .menu{ display: block; position: absolute;}
+
+        @media screen and (max-width: 1075px;) {
+            .day {display: block;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="day">Понедельник</div>
+        <div class="day">Вторник
+            <div class="menu">
+                <div class="add">Завтрак</div>
+                <div class="add">Обед</div>
+                <div class="add">Ужин</div>
+            </div>
+        </div>
+        <div class="day">Среда
+            <div class="menu">
+                <div class="add">Завтрак</div>
+                <div class="add">Обед</div>
+                <div class="add">Ужин</div>
+            </div>
+        </div>
+        <div class="day">Четверг</div>
+        <div class="day">Пятница</div>
+        <div class="day">Суббота</div>
+        <div class="day">Воскресение</div>
+    </div>  
+</body>
+</html>

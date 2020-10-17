@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .main{
+            display: flex;
+            max-width: 95%;
+            margin: 15px auto;
+            align-content: stretch;
+            align-items: stretch;
+            flex-flow: row wrap;
+        }
+        .bl{flex: 1 1 100px; text-align: center;}
+        .menu{background-color: lightgrey; flex-basis: 100px;}
+        .content{background-color: darkgrey; flex-basis: 400px; flex-grow: 3;}
+        .footer{background-color: grey; flex-basis: 100%;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="bl menu"><b>Меню</b><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum nemo, laboriosam suscipit fuga ex, odit, consequatur alias provident blanditiis quia rem. Veritatis praesentium aperiam, explicabo earum sint quasi repudiandae cupiditate?</div>
+        <div class="bl content"><b>Контент</b><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugiat quibusdam quis maiores recusandae alias labore numquam! Eligendi suscipit animi, harum assumenda corrupti quam laudantium nulla, vitae iure voluptatibus at?</div>
+        <div class="bl footer"><b>Подвал</b><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores est excepturi distinctio nobis rem molestiae expedita repudiandae provident nam fugiat veritatis ut officia, voluptates quae a molestias dolorum! Doloremque.</div>
+    </div>
+    
+</body>
+</html>
