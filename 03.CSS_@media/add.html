@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@media</title>
+    <title>add @media</title>
     <style>
         .main{ text-align: center}
         .day{
@@ -20,25 +20,27 @@
         }
         .menu{
             display: none;
-            width: 120px;
+            width: 124px;
             position: relative;
-            top: 45px;
-            right: 1px;
+            top: 40px;
+            right: -2px;
+            opacity: 0.2;
+            transition: all 1s;
         }
         .add{
             background-color: lightgrey;
             border: solid;
             border-color: darkgray;
             border-width: 2px;
+            padding: 10px;
         }
-        div.main> div:hover .menu{ display: block; position: absolute;}
+        div.main> div:hover .menu{display: block; position: absolute; opacity: 1; }
 
         @media screen and (max-width: 1075px) {
             .day {display: block; position: relative;}
             .menu{
-                position: relative;
                 left: 120px;
-                top: -5px;
+                top: -2px;
             }
         }
 

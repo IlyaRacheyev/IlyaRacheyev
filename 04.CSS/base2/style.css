@@ -1,0 +1,30 @@
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: dotted;
+    border-color: rgb(68, 67, 67);
+}
+td{border: dotted;}
+caption{
+    caption-side: bottom;
+}
+tr:nth-child(2n+1){
+    background-color: lightgrey;
+
+}
+tr:nth-child(1){
+    background-color: darkgrey;
+    color: white;
+    font-weight: bold;
+}
+td:nth-child(1):not(#excl){
+    font-weight: bold;
+    text-align: left;
+}
+td:not(#excl):hover{
+    border: solid;
+    color: seagreen;
+    cursor: pointer;
+}
+
