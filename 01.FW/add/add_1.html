@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>materialize1</title>
+    <style>
+        .btn-large{
+            width: 400px;
+            background-color: #e0f2f1;
+            color: #004d40;
+        }
+        .pagination li{background-color: #e0f2f1}
+    </style>
+
+</head>
+<body>
+    <div class="row">
+
+        <div class="col xl4 l12">
+            <h1>HOW-TO: Программа на Python, Часть 1</h1>
+            <div class="collection">
+                <a href="add_1.html" class="collection-item active">Программа на Python — часть 1</a>
+                <a href="add_2.html" class="collection-item">Программа на Python — часть 2</a>
+                <a href="add_3.html" class="collection-item">Программа на Python — часть 3</a>
+            </div>
+                            
+            <h2 id="content">Содержание</h2>
+            
+            <h3>HOW-TO: Программа на Python, Часть 1</h3>
+            <ul>
+                <li><a class="waves-effect waves-light btn-large" href="#prog">Наша первая программа</a></li>
+                <li><a class="waves-effect waves-light btn-large" href="#example">Пример цикла For</a></li>
+            </ul>
+        </div>
+
+        <div class="col xl8 l12">
+            <p>Из множества существующих языков программирования Python — один из самых лёгких в изучении.
+                Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. Хотя Python входит в
+                состав большинства дистрибутивов Linux, на него часто не обращают внимания при выборе языка
+                для изучения. В этой статье мы рассмотрим создание консольных приложений, а в следующей —
+                программирование графических интерфейсов <u>(GUI)</u>. Давайте создадим простую программу прямо
+                сейчас.</p>
+            
+            <h2><a name="prog"></a> Наша первая программа</h2>
+            <a href="#content">К содержанию</a>
+            <p>Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает каждая
+                строка и пойдём дальше.</p>
+            <p>Введите эти 4 строки:</p>
+            <code>
+            #!/usr/bin/env python<br>
+            print 'Hello. I am a python program.'<br>
+            name = raw_input("What is your name?")<br>
+            print "Hello there, " + name + "!"
+            </code>
+            <p>Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+            <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать программу на
+            Python. Для запуска программы нужно сделать её файл исполняемым. Для этого введите в терминале</p>
+            <p><kbd><b><i><u>chmod +x hello.py</u></i></b></kbd></p>
+            <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+            <p><samp>
+                greg@earth:~/python_examples$ ./hello.py<br>
+                Hello. I am a python program.<br>
+                What is your name? Ferd Burphel<br>
+                Hello there, Ferd Burphel!<br>
+                greg@earth:~/python_examples$</samp></p>
+            <p>Вот и всё.</p>
+            
+            <h2 id="example">Пример цикла For</h2>
+            <a href="#content">К содержанию</a>
+            <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый редактор и
+                наберите следующую программу:</p>
+            <pre>
+            #!/usr/bin/env python
+            for cntr in range(0,10):
+                print cntr</pre>
+            <p><i>Не забудьте поставить символ табуляции перед строкой «print cntr».</i> Это важно. В Python для
+                указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках
+                программирования, а отступы.</p>
+        </div>
+    </div>
+    <ul class="pagination center-align">
+        <li class="active  teal darken-1"><a href="add_1.html">1</a></li>
+        <li class="waves-effect"><a href="add_2.html">2</a></li>
+        <li class="waves-effect"><a href="add_3.html">3</a></li>
+      </ul>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
